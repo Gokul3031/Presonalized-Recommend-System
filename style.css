@@ -1,0 +1,57 @@
+body {
+    font-family: Arial, sans-serif;
+}
+
+.container {
+    width: 80%;
+    margin: 0 auto;
+    padding-top: 50px;
+}
+
+input[type="text"] {
+    width: 100%;
+    padding: 10px;
+    margin: 10px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    box-sizing: border-box;
+}
+
+button {
+    background-color: #4CAF50;
+    color: white;
+    padding: 14px 20px;
+    margin: 8px 0;
+    border: none;
+    cursor: pointer;
+    width: 30%;
+}
+
+body {
+    background-image: url('bg-img.jpg'); 
+    background-size: cover; 
+    /* background-repeat: no-repeat; 
+    background-position: center;  */
+}
+
+button:hover {
+    opacity: 0.8;
+}
+
+#suggestions-list {
+    list-style-type: none;
+    padding: 0;
+}
+
+#suggestions-list li {
+    padding: 10px;
+    cursor: pointer;
+}
+
+#recommendation-results {
+    display: flex;  
+    flex-direction: column;
+    gap: 20px;  
+}
+
+

@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Book Recommendation System</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+<div class="container" >
+    <h1>Book Recommendation System 📚</h1>
+    <!-- A single input field for both autocomplete and recommendations -->
+    <input type="text" id="book-input" placeholder="Start typing a book name..." oninput="fetchSuggestions(this.value)">
+    <!-- List to show autocomplete suggestions -->
+    <ul id="suggestions-list"></ul>
+
+    <!-- Button to fetch recommendations -->
+    <button onclick="getRecommendations()" style="width: 30%;">Get recommendations</button>
+    
+    <!-- Section to display recommendation results -->
+    <div id="recommendation-results" style="display: flex; flex-direction: row;"></div>
+
+    
+</div>
+<script src="script.js"></script>
+</body>
+
+</html>
