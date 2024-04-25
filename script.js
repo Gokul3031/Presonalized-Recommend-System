@@ -85,7 +85,7 @@ function fetchSuggestions(input) {
         return;  // No need to fetch suggestions
     }
 
-    fetch(`http://127.0.0.1:8023/autocomplete/${input}`)
+    fetch(`http://127.0.0.1:8000/autocomplete/${input}`)
         .then(response => response.json())
         .then(data => {
             list.innerHTML = '';  // Clear previous suggestions
@@ -113,7 +113,7 @@ function getRecommendations() {
         return;
     }
 
-    fetch('http://127.0.0.1:8023/recommend/', {
+    fetch('http://127.0.0.1:8000/recommend/', {
         method: 'POST',
         headers: {
             'Content-Type': 'application/json'
